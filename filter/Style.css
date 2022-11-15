@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: rgb(145, 170, 170);
+    padding: 1rem;
+}
+.html{
+    font-size: 22px;
+}
+.box{
+    height: 8rem;
+    border: 5px solid white;
+    /* border: 2px solid ; */
+    padding: 1rem;
+}
+.box img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.box img:hover{
+    transform: scale(1.5);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(124px,1fr));
+    gap: 1rem;
+}
+.control{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.btn-group button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: gold;
+    border-radius: 2px;
+    
+}
+.btn-group button:hover{
+    
+    background-color: rgb(145, 170, 170);
+}
+#search{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 2px solid gold;
+    border-radius: 2px;
+}
